@@ -1,0 +1,25 @@
+<ion-view view-title="About">
+  <ion-nav-title>
+    เกี่ยวกับร้าน
+  </ion-nav-title>
+
+  <ion-content>
+    <form ng-submit="aboutController">
+
+    <br> <div ng-repeat="data in myDataArray">
+    <div align="center"><img src="img/shoppic/{{data.ShopPic}}" width="80%"></div>
+    <h3 align="center">{{data.ShopName}}</h3>
+    <p align="center">{{data.Add1}}</p>
+    <p align="center">{{data.Add2}}</p>
+    <p class="ion-ios-telephone" align="center"> {{data.Tel}}</p>
+    <p class="ion-clock" align="center"> {{data.Open}}</p>
+    <br>
+    <p align="center">แผนที่ร้าน</p>
+    <div align="center"><img src="img/shoppic/{{data.map}}" width="80%"></div>
+    <br><br>
+    <p align="center">Application by Casnova_JAM</p>
+    <p align="center">Natpakal Kunaporntham</p>
+  </div>
+    </from>
+  </ion-content>
+</ion-view>

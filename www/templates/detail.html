@@ -1,0 +1,66 @@
+<ion-view view-title="Detail">
+  <ion-nav-bar>
+  <ion-nav-title>
+    ข้อมูลหนังสือ
+  </ion-nav-title>
+
+    <ion-nav-buttons side="left">
+      <button class="button-icon ion-chevron-left" ng-click="btnBack()">Back</button>
+    </ion-nav-buttons>
+
+  </ion-nav-bar>
+  <ion-content>
+    <form ng-submit="detailController">
+    <div align="center"><img src="img/cartoonpic/{{txtBPic1}}" . width="250"></div>
+    <div class="list">
+
+      <div class="item item-icon-left">
+        <i class="icon ion-information-circled"></i>
+        ชื่อหนังสือ : {{txtBName}}
+      </div>
+
+      <div class="item item-icon-left">
+        <i class="icon ion-information-circled"></i>
+        ชื่อหนังสือEN : {{txtBNameEN}}
+      </div>
+
+      <div class="item item-icon-left">
+        <i class="icon ion-iphone"></i>
+        เล่มที่ : {{txtBNum}}
+      </div>
+
+      <div class="item item-icon-left">
+        <i class="icon ion-iphone"></i>
+        ประเภท : {{txtBType}}
+      </div>
+
+      <div class="item item-icon-left">
+        <i class="icon ion-iphone"></i>
+        หมวดหมู่ : {{txtBGenre}}
+      </div>
+
+      <div class="item item-icon-left">
+        <i class="icon ion-iphone"></i>
+        สำนักพิมพ์ : {{txtBPub}}
+      </div>
+
+      <div class="item item-icon-left">
+        <i class="icon ion-iphone"></i>
+        วันวางจำหน่าย : {{txtDSale}}
+      </div>
+
+      <div class="item item-icon-left">
+        <i class="icon ion-iphone"></i>
+        ราคา : {{txtBPrice}} THB
+      </div>
+
+    <!--  <div class="item item-icon-left">
+        <i class="icon ion-iphone"></i>
+        <div>{{txtSynopsis}}</div>
+      </div> -->
+
+    </div>
+    <button class="button button-full" ng-click="btnCall()">Synopsis</button>
+    </form>
+  </ion-content>
+</ion-view>

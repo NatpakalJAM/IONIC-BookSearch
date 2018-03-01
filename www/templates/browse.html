@@ -1,0 +1,28 @@
+<ion-view view-title="หนังสือทั้งหมด">
+    <ion-nav-title>
+      หนังสือทั้งหมด
+    </ion-nav-title>
+
+  <ion-content>
+    <form ng-submit="listController">
+
+    <div class="list">
+      <div class="item item-avatar-left item-icon-right" ng-click="btnDetail(data)" ng-repeat="data in myDataArray">
+        <img src= "img/cartoonpic/{{data.BPic1}}". width="250" height="345">
+        <div style="float:left"><h2>{{data.BName}}</h2></div> <div>(เล่ม {{data.BNum}})</div>
+        <p>{{data.BNameEN}} No. {{data.BNum}}</p>
+        <i class="icon ion-chevron-right"></i>
+      </div>
+    </div>
+
+    <!-- <ion-list>
+      <ion-item class="item item-avatar-left item-icon-right" ng-click="btnDetail(data)" ng-repeat="data in myDataArray">
+        <h2>{{data.BName}}</h2>
+        <p>{{data.BNameEN}}</p>
+        <i class="icon ion-chevron-right"></i>
+      </ion-item>
+    </ion-list> -->
+
+  </form>
+  </ion-content>
+</ion-view>
